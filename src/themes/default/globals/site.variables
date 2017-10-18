@@ -3,6 +3,12 @@
 *******************************/
 
 /*-------------------
+       Version
+--------------------*/
+
+@version           : '2.3.1';
+
+/*-------------------
        Fonts
 --------------------*/
 
@@ -52,7 +58,7 @@
 --------------------*/
 
 @primaryColor        : @blue;
-@secondaryColor      : @black;
+@secondaryColor      : @grey;
 
 @lightPrimaryColor   : @lightBlue;
 @lightSecondaryColor : @lightBlack;
@@ -121,7 +127,7 @@
         Page
 --------------------*/
 
-@pageBackground      : #FFFFFF;
+@pageBackground      : rgba(0, 0, 0, 0.08);
 @pageOverflowX       : hidden;
 
 @lineHeight          : 1.4285em;
@@ -146,9 +152,7 @@
 /*-------------------
     Scroll Bars
 --------------------*/
-
-@useCustomScrollbars: true;
-
+@useCustomScrollbars: false;
 @customScrollbarWidth: 10px;
 @customScrollbarHeight: 10px;
 
@@ -221,17 +225,17 @@
 
 /*---  Colors  ---*/
 @red              : #DB2828;
-@orange           : #F2711C;
+@orange           : #EF7D4A;
 @yellow           : #FBBD08;
 @olive            : #B5CC18;
 @green            : #21BA45;
 @teal             : #00B5AD;
-@blue             : #2185D0;
+@blue             : #006FBF;
 @violet           : #6435C9;
 @purple           : #A333C8;
 @pink             : #E03997;
 @brown            : #A5673F;
-@grey             : #767676;
+@grey             : #6F6F6F;
 @black            : #1B1C1D;
 
 /*---  Light Colors  ---*/
@@ -241,7 +245,7 @@
 @lightOlive       : #D9E778;
 @lightGreen       : #2ECC40;
 @lightTeal        : #6DFFFF;
-@lightBlue        : #54C8FF;
+@lightBlue        : #59B9FF;
 @lightViolet      : #A291FB;
 @lightPurple      : #DC73FF;
 @lightPink        : #FF8EDF;
@@ -361,11 +365,11 @@
 @negativeTextColor       : #9F3A38;
 
 /* Info */
-@infoColor              : #31CCEC;
-@infoBackgroundColor    : #F8FFFF;
-@infoBorderColor        : #A9D5DE;
-@infoHeaderColor        : #0E566C;
-@infoTextColor          : #276F86;
+@infoColor              : #006FBF;
+@infoBackgroundColor    : #F2F9FF;
+@infoBorderColor        : #006FBF;
+@infoHeaderColor        : #006FBF;
+@infoTextColor          : #006FBF;
 
 /* Warning */
 @warningColor           : #F2C037;
@@ -379,8 +383,8 @@
 --------------------*/
 
 /* For source only. Modified in gulp for dist */
-@imagePath : '../../themes/default/assets/images';
-@fontPath  : '../../themes/default/assets/fonts';
+@imagePath : '/static/vendor/semantic-ui-css-@{version}/themes/default/assets/images';
+@fontPath  : '/static/vendor/semantic-ui-css-@{version}/themes/default/assets/fonts';
 
 /*-------------------
        Em Sizes

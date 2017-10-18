@@ -10,8 +10,10 @@
 }
 
 /* Checkmark */
-.ui.checkbox label:after,
-.ui.checkbox .box:after {
+
+/* NOTE: modified order of the selectors below to fix emotion bug with css processing */
+.ui.checkbox .box:after,
+.ui.checkbox label:after {
   font-family: 'Checkbox';
 }
 
